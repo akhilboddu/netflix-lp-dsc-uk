@@ -3,16 +3,71 @@
 
 * {
     font-family: 'Opens Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
-.logo {
-    height: 100px;
-    width: 100px;
-    background-color: black;
-    margin: 30px;
-    padding: 20px;
-    border: 10px red dashed;
+.banner-wrap {
+    background: url(./assets/bgimage.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+}
 
+.banner-wrap .navbar .logo img {
+    height: 36px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    margin: 0 56px;
+    padding-top: 20px;
+    align-items: center;
+}
+
+.btn {
+    background-color: #e50914;
+    padding: 7px 17px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+    border-radius: 3px;
+}
+
+.banner-container {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(80vh - 4rem) ;
+}
+
+.banner-wrap h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.banner-wrap h2 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 16px 155px;
+}
+
+.get-started h3 {
+    font-size: 19.2px;
+    font-weight: 300;
+}
+
+.banner-wrap form {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
