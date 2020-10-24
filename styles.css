@@ -1,13 +1,18 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap);
+
+
 * {
+    font-family: 'Opens Sans', sans-serif;
     font-size: 20px;
+    box-sizing: border-box;
 }
 
+.logo {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin: 30px;
+    padding: 20px;
+    border: 10px red dashed;
 
-
-.font-color {
-    color: red;
 }
-/* 
-h1,h2,h3 {
-
-} */
