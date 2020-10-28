@@ -63,6 +63,7 @@
 .get-started h3 {
     font-size: 19.2px;
     font-weight: 300;
+    padding: 10px 47px 20px 47px;
 }
 
 .banner-wrap form {
@@ -70,4 +71,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 60px;
+    flex-wrap: wrap;
+}
+
+.banner-wrap input {
+    width: 450px;
+    height: 100%;
+    font-size: 1rem;
+    padding-left: 10px;
+    border: none;
+}
+
+.banner-wrap button {
+    width: 257px;
+    height: 100%;
+    background-color: #dc060f;
+    border: none;
+    color: white;
+    font-size: 26px;
+    padding: .5rem 0;
+    font-weight: 300;
 }
