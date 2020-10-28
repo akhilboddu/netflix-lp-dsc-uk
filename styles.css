@@ -15,7 +15,21 @@
     height: 80vh;
     background-position: center;
     background-size: cover;
+    position: relative;
+    z-index: 1;
 }
+
+.banner-wrap::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
 
 .banner-wrap .navbar .logo img {
     height: 36px;
@@ -92,4 +106,82 @@
     font-size: 26px;
     padding: .5rem 0;
     font-weight: 300;
+}
+
+.info-container {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-top: #222222 8px solid;
+    padding: 70px 45px;
+    justify-content: center;
+}
+
+
+
+.tv-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tv-container .tv-image {
+    position: relative;
+    z-index: 1;
+}
+
+.tv-image img {
+    width: 80%;
+}
+.tv-container .video {
+    position: absolute;
+    width: 100%;
+}
+
+.info-container h1 {
+    font-size: 50px;
+    text-align: left;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.info-container h2 {
+    font-size: 1.625rem;
+    font-weight: 300;
+}
+
+.footer {
+    display: flex;
+    background-color: black;
+    color: #757575;
+    border-top: #222222 8px solid;
+    flex-direction: column;
+    padding: 70px 153.5px;
+    justify-content: center;
+
+}
+
+.footer a {
+    text-decoration: none;
+    color: #757575;
+    margin-bottom: 15px;
+}
+
+.contact-us {
+    margin-bottom: 15px;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.hyperlinks {
+    display: flex;
+    justify-content: start;
+}
+
+.col {
+    width: calc(100% / 4)
 }
